@@ -12,6 +12,13 @@ namespace R29_ACT3
 {
     public partial class Form_act3 : Form
     {
+
+        // MIEMBROS PRIVADOS
+
+        string _nombre = "";
+        string _apellidos = "";
+        int _edad = 0;
+
         public Form_act3()
         {
             InitializeComponent();
@@ -51,13 +58,16 @@ namespace R29_ACT3
             {
                 case "TextEntradaNombre":
                     Validacion.ValidarCadena(textBox.Text, 30);
+                        _nombre = textBox.Text;
                     break;
                 case "TextEntradaApellidos":
                     Validacion.ValidarCadena(textBox.Text, 50);
+                        _apellidos = textBox.Text;
                     break;
                 case "TextEntradaEdad":
                     Validacion.ValidarCadena(textBox.Text, 3);
                     Validacion.ValidarEdad(textBox.Text);
+                        _edad = Convert.ToInt32(textBox.Text);
                     break;
             }
             }
