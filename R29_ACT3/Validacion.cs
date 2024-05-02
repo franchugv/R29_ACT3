@@ -15,14 +15,15 @@ namespace R29_ACT3
         }
  
 
-        public static void ValidarEdad(string cadena)
+        public static int ValidarEdad(string cadena)
         {
-            float num;
+            int num = 0;
 
-            num = Convert.ToSingle(cadena);
+            num = Convert.ToInt32(cadena);
 
             if (num <= 0 || num > 100) throw new OverflowException($"{cadena} Supera el rango permitido");
-        
+
+            return num;
         }
     }
 }

@@ -81,6 +81,7 @@
             this.TextEntradaNombre.Size = new System.Drawing.Size(225, 20);
             this.TextEntradaNombre.TabIndex = 4;
             this.TextEntradaNombre.TextChanged += new System.EventHandler(this.Validacion_TextBox);
+            this.TextEntradaNombre.Leave += new System.EventHandler(this.Validacion_TextBox);
             // 
             // TextEntradaApellidos
             // 
@@ -89,6 +90,7 @@
             this.TextEntradaApellidos.Size = new System.Drawing.Size(225, 20);
             this.TextEntradaApellidos.TabIndex = 5;
             this.TextEntradaApellidos.TextChanged += new System.EventHandler(this.Validacion_TextBox);
+            this.TextEntradaApellidos.Leave += new System.EventHandler(this.Validacion_TextBox);
             // 
             // TextEntradaEdad
             // 
@@ -97,6 +99,7 @@
             this.TextEntradaEdad.Size = new System.Drawing.Size(225, 20);
             this.TextEntradaEdad.TabIndex = 6;
             this.TextEntradaEdad.TextChanged += new System.EventHandler(this.Validacion_TextBox);
+            this.TextEntradaEdad.Leave += new System.EventHandler(this.Validacion_TextBox);
             // 
             // Form_act3
             // 
