@@ -67,7 +67,7 @@ namespace R29_ACT3
                 case "TextEntradaEdad":
                     Validacion.ValidarCadena(textBox.Text, 3);
                     Validacion.ValidarEdad(textBox.Text);
-                        _edad = Convert.ToInt32(textBox.Text);
+                        _edad = Validacion.ValidarEdad(textBox.Text);
                     break;
             }
             }
